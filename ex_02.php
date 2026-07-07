@@ -1,13 +1,16 @@
 <?php
 
 function inverterTexto($texto){
-    echo "Quantidade de caracteres: ".strlen($texto)."<br>";
+    $textoInvertido = strrev($texto);
+    return $textoInvertido;
 
-    return strrev($texto);
 }
 
 $texto = "Programacao";
+$resultado = inverterTexto($texto);
 
-echo "texto invertido: ".inverterTexto($texto);
+echo "Texto original: $texto <br>";
+echo "Quantidade de caracteres: ". strlen($texto ). "<br>";
+echo "Texto invertido: $resultado <br>";
 
 ?>
